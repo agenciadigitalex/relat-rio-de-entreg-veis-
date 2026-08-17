@@ -1,0 +1,19 @@
+{
+  "runtime": "python3.9",
+  "functions": {
+    "api/relatorio.py": {
+      "memory": 128,
+      "maxDuration": 30
+    }
+  },
+  "env": {
+    "NOTION_TOKEN": "@notion_token",
+    "DATABASE_ID": "3a088bc5-b52d-8054-9724-000ba5d78160"
+  },
+  "crons": [
+    {
+      "path": "/api/relatorio",
+      "schedule": "0 */6 * * *"
+    }
+  ]
+}
